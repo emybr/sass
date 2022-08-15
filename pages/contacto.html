@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="icon" href="../imagenes/VT.png">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -40,52 +40,53 @@
         </nav>
         <!--fin de barra-->
     </header>
-    <main>
+
+<section class="fondo_contactanos">
+    <div class="info_contactos">
         <div class="titulo">
             <h1>CONTACTANOS</h1>
         </div>
-        <section>
-            <div class="centrar-tarjeta">
-                <article>
-                    <div class="texto">
-                        <p>Cualquier duda o consultas que tengas no dudes en escribirnos</p>
-                        <form> 
-                            <div class="datos-personales">
-                                <label for="Nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                            </div>
-                            <div class="datos-personales">
-                                <label for="Apellido">Apellido</label>
-                                <input type="text" id="Apellido" name="Apellido" placeholder="Apellido"required>
-                            </div>
-                            <div class="datos-personales">
-                                <label for="comentario">Mensaje</label>
-                                <select name="consulta" id="">
-                                <option value="">Sugerencia de video</option>
-                                <option value="">Dudas de video</option>
-                                </select>
-                            </div>
-                            <div class="datos-personales">
-                                <textarea cols="35" rows="10" id="comentario" placeholder="Comentario" name="comentario" style="resize:none;"  ></textarea> 
-                            </div>
-                            <div class="datos-personales">
-                                <label for="">Recibir Newsletter</label>
-                                <input type="checkbox">
-                            </div>
-                            <div class="datos-personales">
-                                <label for="archivo"></label>
-                                <input type="file" id="archivo" placeholder="archivo">
-                            </div>
-                            <div class="datos-personales">
-                                <input type="submit">
-                                <input type="reset">
-                            </div>            
-                        </form>
-                    </div>
-                </article>
+        <div class="centrar-tarjeta">
+            <div class="texto">
+                <p>Cualquier duda o consultas que tengas no dudes en escribirnos</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+    <article class="card_contactos">
+        <form> 
+            <div class="datos-personales">
+                <label for="Nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="datos-personales">
+                <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido"required>
+            </div>
+            <div class="datos-personales">
+                <label for="comentario">Mensaje</label>
+                    <select name="consulta" id="">
+                        <option value="">Sugerencia de video</option>
+                        <option value="">Dudas de video</option>
+                    </select>
+            </div>
+            <div class="datos-personales">
+                <textarea cols="35" rows="10" id="comentario" placeholder="Comentario" name="comentario" style="resize:none;"  ></textarea> 
+            </div>
+            <div class="datos-personales">
+                <label for="">Recibir Newsletter</label>
+                <input type="checkbox">
+            </div>
+            <div class="datos-personales">
+                <label for="archivo"></label>
+                <input type="file" id="archivo" placeholder="archivo">
+            </div>
+            <div class="datos-personales">
+                <input type="submit">
+                <input type="reset">
+            </div>            
+        </form>
+    </article>
+</section>
     <footer class="flex-container">
         <a href="https://twitter.com/maxibr82" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://www.instagram.com/visiontecnica2022/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
