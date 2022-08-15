@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="imagenes/VT.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Montserrat:wght@600&family=Oswald:wght@200;300&display=swap"
+        rel="stylesheet">
+
+    <title>Visión técnica</title>
+</head>
+
+<body>
+    <header>
+        <!--inicio de barra-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img id="vt" src="imagenes/VT.png" alt=""></a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/youtube.html">YOUTUBE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/conoceme.html">CONOCEME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/consejos.html">CONSEJOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--fin de barra-->
+    </header>
+    <main>
+        <section>
+            <iframe class="video1" src="https://www.youtube.com/embed/aDFOtjWFfn0?autoplay"
+                title="Nuevo +Vision Técnica  2022" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section class="container">
+            <article>
+                <h3>Test Gamer</h3>
+                <a href="https://www.youtube.com/watch?v=QSBrp_il2rI" target="_blank"><img class="img-tarjeta"
+                        src="imagenes/tarjetas/test Gamer.jpg" alt="Test Gamer"></a>
+                <p>Apple M1 Sirve para jugar???</p>
+            </article>
+            <article>
+                <h3>Asi es como se hace</h3>
+                <a href="https://www.youtube.com/watch?v=CSvRN7KDRfE&t=2s " target="_blank"><img class="img-tarjeta"
+                        src="imagenes/tarjetas/generador.jpg" alt="generador"></a>
+                <p>Como Conectar correctamente este generador BTA?????</p>
+            </article>
+            <article>
+                <h3>Prueba real!!! Asi funciona</h3>
+                <a href="https://www.youtube.com/watch?v=Hon9raq2LQU&t=74s" target="_blank"><img class="img-tarjeta"
+                        src="imagenes/tarjetas/bosch.jpg" alt="bosch"></a>
+                <p>Prueba de detector de materiales Bosch en condiciones reales de detección.</p>
+            </article>
+        </section>
+    </main>
+    <!--inicio carousel-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="tam-imagen" src="imagenes/macbook-air-m1-2-scaled.jpg.webp" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="tam-imagen" src="imagenes/mac-ultrawide-issue-1536x864.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img class="tam-imagen" src="imagenes/Apple-M1.jpg" alt="New York">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!--fin carousel-->
+    <footer class="flex-container">
+        <a href="https://twitter.com/maxibr82" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/visiontecnica2022/" target="_blank"><i
+                class="fa-brands fa-instagram-square"></i></a>
+        <a href="https://www.youtube.com/c/VisionTécnica" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
