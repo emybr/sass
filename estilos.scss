@@ -2,7 +2,7 @@ $color_fuente_principal: #ffff;
 
 @font-face {
     font-family:Anurati-Regular ;
-    src:url(/fuentes/anurati_font/Anurati-Regular.otf)
+    src:url(fuentes/anurati_font/Anurati-Regular.otf)
 }
 
 body {
@@ -330,7 +330,7 @@ form.example::after {
 }
 .card_contactos{
     opacity: 55%;
-    background-image: url(/imagenes/f.elconfidencial.com-original-d9e-66d-793-d9e66d793adbc994841e60850a17e61c.jpeg);
+    background-image: url(imagenes/f.elconfidencial.com-original-d9e-66d-793-d9e66d793adbc994841e60850a17e61c.jpeg);
     color: #f1f1f1;
 }
 
