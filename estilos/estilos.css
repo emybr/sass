@@ -195,11 +195,12 @@ section article:hover {
   font-size: 11pt;
 }
 
+/*
 .texto {
-  font-size: 18px;
-  color: rgba(241, 241, 241, 0.3215686275);
+    font-size: 18px;
+    color: #f1f1f152;
 }
-
+*/
 .datos-personales {
   margin: 10px;
 }
@@ -356,9 +357,9 @@ form.example::after {
 
 .small, .ucard > p {
   font-weight: 400;
-  font-size: 12px;
   opacity: 0.75;
-  color: #fff;
+  color: white;
+  font-size: 12px;
 }
 
 .ucard {
@@ -385,7 +386,18 @@ form.example::after {
   color: #dcdcdc;
 }
 
-.tamano {
+.textos_generales {
+  font-style: italic;
+}
+
+/*@mixin fuente {
+    font-size: 100px;
+}
+
+    .par {
+    @include fuente()
+}*/
+.iphone {
   width: 800px;
   margin-left: 50px;
 }
@@ -702,6 +714,14 @@ form.example::after {
   }
   .info_contactos {
     padding-top: 2%;
+  }
+  .tamano {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .iphone {
+    width: 400px;
+    margin-left: 0px;
   }
 }
 

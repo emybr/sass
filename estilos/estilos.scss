@@ -1,8 +1,8 @@
 $color_fuente_principal: #ffff;
 
 @font-face {
-    font-family:Anurati-Regular ;
-    src:url(../fuentes/anurati_font/Anurati-Regular.otf)
+    font-family: Anurati-Regular;
+    src: url(../fuentes/anurati_font/Anurati-Regular.otf)
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family:Anurati-Regular ;
+    font-family: Anurati-Regular;
     font-size: 40pt;
     color: $color_fuente_principal;
     text-align: center;
@@ -21,6 +21,7 @@ h1 {
     width: auto;
     margin-left: auto;
 }
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
@@ -28,21 +29,25 @@ h2 {
     text-align: center;
     padding-top: 15px;
 }
+
 .texto_card {
     font-size: 15pt;
     color: black;
 }
+
 .texto_card2 {
     font-size: 15pt;
     color: black;
     padding-top: 4%;
 }
+
 .video1 {
     height: 400px;
     width: 100%;
     margin-bottom: 35px;
     box-shadow: 0 1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
+
 .barra a {
     text-decoration: none;
     color: rgb(251, 249, 249);
@@ -72,12 +77,14 @@ footer {
     font-size: 26px;
     width: 45px;
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
 }
+
 section article {
     transition: box-shadow 0.3s ease;
     background-color: white;
@@ -193,12 +200,12 @@ section article:hover {
     font-size: 11pt;
 
 }
-
+/*
 .texto {
     font-size: 18px;
     color: #f1f1f152;
 }
-
+*/
 .datos-personales {
     margin: 10px;
 
@@ -308,34 +315,38 @@ form.example::after {
     clear: both;
     display: table;
 }
-.boton_busqueda{
+
+.boton_busqueda {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
-.btn-primary{
-    background-color:black;
+
+.btn-primary {
+    background-color: black;
     border-color: black;
     margin-left: 125px;
 
 }
-.fondo_contactanos{
+
+.fondo_contactanos {
     background-color: black;
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.info_contactos{
+.info_contactos {
     padding-top: 20%;
 
 }
-.card_contactos{
+
+.card_contactos {
     opacity: 55%;
     background-image: url(imagenes/f.elconfidencial.com-original-d9e-66d-793-d9e66d793adbc994841e60850a17e61c.jpeg);
     color: #f1f1f1;
 }
 
-.card1{
+.card1 {
     border-radius: 4px;
     padding: 6px;
     box-shadow: 1px 1px 12px 0px;
@@ -346,33 +357,35 @@ form.example::after {
 }
 
 
-.title{
-    font-family:Anurati-Regular ;
+.title {
+    font-family: Anurati-Regular;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 10px;
     opacity: 0.85;
 }
 
-.small{
+.small {
     font-weight: 400;
-    font-size: 12px;
     opacity: 0.75;
-    color: #fff
-
+    color: #ffff;
+    font-size: 12px
 }
 
 .ucard {
-    @extend .card1; 
+    @extend .card1;
     text-align: center;
     width: 300px;
-    > h3{
+
+    >h3 {
         @extend .title
     }
-    > p {
+
+    >p {
         @extend .small
     }
 }
+
 $colores: (
     3s: #a7a7a7,
     3gs: #bdbdbd,
@@ -381,32 +394,47 @@ $colores: (
     5: #dcdcdc
 );
 
-@each $formato, $color in $colores{
+@each $formato,
+$color in $colores {
     .tarjeta_historia--#{$formato} {
         color: $color;
     }
-    
-}
-@mixin imagen {
-    width: 800px;
-    margin-left: 50px;
-    
-}
 
-.tamano{
-        @include imagen()
+}
+    @mixin fuente {
+        font-style: italic;
     }
 
-@media (max-width:1366px){
+    .textos_generales{
+        @include fuente()
+    }
+
+/*@mixin fuente {
+    font-size: 100px;
+}
+
+    .par {
+    @include fuente()
+}*/
+
+
+.iphone {
+    width: 800px;
+    margin-left: 50px;
+}
+
+@media (max-width:1366px) {
     .video-chico {
         width: 500px;
         height: 290px;
     }
-    .tarjeta_capacitacion{
+
+    .tarjeta_capacitacion {
         margin-bottom: 3%;
     }
-    .btn-primary{
-        background-color:black;
+
+    .btn-primary {
+        background-color: black;
         border-color: black;
         margin-left: 125px;
     }
@@ -424,7 +452,7 @@ $colores: (
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
-        
+
     }
 
     .card {
@@ -452,25 +480,30 @@ $colores: (
         height: 200px;
         margin-bottom: 60px;
     }
-    .carousel-inner{
+
+    .carousel-inner {
         padding-top: 20px;
         margin-left: 0%;
         width: auto;
     }
-    .tam-imagen{
-    max-width: 720px;
-    height: auto;
+
+    .tam-imagen {
+        max-width: 720px;
+        height: auto;
     }
-    .fondo_contactanos{
+
+    .fondo_contactanos {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:2;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2;
     }
-    .card_contactos{
-    margin-left: 25%;
+
+    .card_contactos {
+        margin-left: 25%;
     }
-    .btn-primary{
-        background-color:black;
+
+    .btn-primary {
+        background-color: black;
         border-color: black;
         margin-left: 20px;
     }
@@ -605,18 +638,21 @@ $colores: (
         grid-row: 10/11;
         padding-left: 50px;
     }
-    .carousel-inner{
+
+    .carousel-inner {
         padding-top: 20px;
         margin-left: 0%;
         width: auto;
     }
-    .tam-imagen{
-    max-width: 670px;
-    height: auto;
+
+    .tam-imagen {
+        max-width: 670px;
+        height: auto;
     }
-    .card_contactos{
+
+    .card_contactos {
         margin-left: 18%;
-        }
+    }
 }
 
 
@@ -749,22 +785,35 @@ $colores: (
         grid-row: 10/11;
         padding-left: 50px;
     }
-.carousel-inner{
-    padding-top: 20px;
-    margin-left: 0%;
-    width: auto;
-}
-.tam-imagen{
-max-width: 414px;
-height: auto;
-}
-.card_contactos{
-    margin-left: 1%;
+
+    .carousel-inner {
+        padding-top: 20px;
+        margin-left: 0%;
+        width: auto;
     }
-.texto{
-    padding-left: 2%;
-}
-.info_contactos{
-    padding-top: 2%;
-}
+
+    .tam-imagen {
+        max-width: 414px;
+        height: auto;
+    }
+
+    .card_contactos {
+        margin-left: 1%;
+    }
+
+    .texto {
+        padding-left: 2%;
+    }
+
+    .info_contactos {
+        padding-top: 2%;
+    }
+    .tamano {
+        width: 400px;
+        margin-left: 50px;
+    }
+    .iphone {
+        width: 400px;
+        margin-left: 0px;
+    }
 }
