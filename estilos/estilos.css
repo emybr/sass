@@ -1,13 +1,17 @@
 @font-face {
-  font-family: Anurati-Regular;
-  src: url(../fuentes/anurati_font/Anurati-Regular.otf);
+  font-family: "SourceSansPro-Light";
+  src: url(../fuentes/SourceSansPro-Light.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url(../fuentes/SourceSansPro-Bold.ttf);
 }
 body {
   background-color: #efefef;
 }
 
 h1 {
-  font-family: Anurati-Regular;
+  font-family: "Montserrat", sans-serif;
   font-size: 40pt;
   color: white;
   text-align: center;
@@ -20,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "SourceSansPro-Light";
   font-size: 25pt;
   text-transform: uppercase;
   text-align: center;
@@ -41,7 +45,6 @@ h2 {
 .video1 {
   height: 400px;
   width: 100%;
-  margin-bottom: 35px;
   box-shadow: 0 1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
@@ -99,8 +102,8 @@ section article {
 }
 
 .carousel {
+  margin-top: 20px;
   background-color: black;
-  margin-top: 50px;
 }
 
 .tam-imagen {
@@ -127,43 +130,119 @@ section article:hover {
   height: auto;
 }
 
-.video-grande {
-  width: 1120px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.video-grande-youtube {
-  width: 90%;
-  height: 280px;
-}
-
 .centrar-tarjeta {
   display: flex;
   justify-content: center;
 }
 
-.caja-video-chica {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.video_youtube {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 1%;
+  padding-right: 2%;
+  margin-top: 2%;
 }
 
-.video-chico {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+.titulo_youtube {
+  background-color: rgb(85, 80, 80);
+  color: rgb(209, 198, 198);
+  width: 65%;
+  padding-bottom: 15px;
+  margin-left: 50px;
+  font-size: 28px;
 }
 
-.video-chico-youtube {
-  width: 90%;
-  height: 90% x;
+.youtube0 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.youtube1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube3 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube6 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+
+.youtube0:hover {
+  transform: scale(1.05);
+  transition: all 0.7s;
+}
+
+.youtube1:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
+}
+
+.youtube2:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
+}
+
+.youtube3:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
+}
+
+.youtube4:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
+}
+
+.youtube5:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
+}
+
+.youtube6:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: all 0.7s;
 }
 
 .titulo {
-  background-color: black;
   height: 80px;
   padding: 10px;
 }
@@ -195,12 +274,6 @@ section article:hover {
   font-size: 11pt;
 }
 
-/*
-.texto {
-    font-size: 18px;
-    color: #f1f1f152;
-}
-*/
 .datos-personales {
   margin: 10px;
 }
@@ -332,9 +405,7 @@ form.example::after {
 }
 
 .card_contactos {
-  opacity: 55%;
-  background-image: url(imagenes/f.elconfidencial.com-original-d9e-66d-793-d9e66d793adbc994841e60850a17e61c.jpeg);
-  color: #f1f1f1;
+  margin: 18vh;
 }
 
 .card1, .ucard {
@@ -348,11 +419,11 @@ form.example::after {
 }
 
 .title, .ucard > h3 {
-  font-family: Anurati-Regular;
+  font-family: "SourceSansPro-Bold";
   font-weight: 700;
   font-size: 50px;
-  letter-spacing: 10px;
   opacity: 0.85;
+  color: #dcdcdc;
 }
 
 .small, .ucard > p {
@@ -366,47 +437,20 @@ form.example::after {
   text-align: center;
   width: 300px;
 }
-.tarjeta_historia--3s {
-  color: #a7a7a7;
-}
-
-.tarjeta_historia--3gs {
-  color: #bdbdbd;
-}
-
-.tarjeta_historia--4 {
-  color: #c9c9c9;
-}
-
-.tarjeta_historia--4s {
-  color: #d3d3d3;
-}
-
-.tarjeta_historia--5 {
-  color: #dcdcdc;
-}
-
 .textos_generales {
   font-style: italic;
 }
 
-/*@mixin fuente {
-    font-size: 100px;
+.duda {
+  color: red;
 }
 
-    .par {
-    @include fuente()
-}*/
 .iphone {
   width: 800px;
   margin-left: 50px;
 }
 
 @media (max-width: 1366px) {
-  .video-chico {
-    width: 500px;
-    height: 290px;
-  }
   .tarjeta_capacitacion {
     margin-bottom: 3%;
   }
@@ -416,7 +460,35 @@ form.example::after {
     margin-left: 125px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1110px) {
+  .titulo_youtube {
+    font-size: 22px;
+  }
+  .fondo_contactanos {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .card_contactos {
+    margin-left: 5%;
+    margin-top: 21vh;
+    margin-bottom: 21vh;
+  }
+}
+@media (max-width: 900px) {
+  .iphone {
+    width: 600px;
+  }
+  .fondo_contactanos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card_contactos {
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 16vh;
+  }
+}
+@media (max-width: 760px) {
   .barra {
     font-size: 14px;
     grid-gap: 12px;
@@ -436,17 +508,8 @@ form.example::after {
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
   }
-  .video-grande {
-    width: 700px;
-    height: 250px;
-  }
   .centrar-tarjeta {
     margin-bottom: 16px;
-  }
-  .video-chico {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 60px;
   }
   .carousel-inner {
     padding-top: 20px;
@@ -470,6 +533,39 @@ form.example::after {
     border-color: black;
     margin-left: 20px;
   }
+  .video_youtube {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .youtube0 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .youtube1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .youtube2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .youtube3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .youtube4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .youtube5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .youtube6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 }
 @media (max-width: 670px) {
   .barra {
@@ -483,19 +579,6 @@ form.example::after {
   }
   h1 {
     font-size: 40px;
-  }
-  .video-grande-youtube {
-    width: 380px;
-    height: 230px;
-  }
-  .video-chico {
-    width: 420px;
-    height: 280px;
-    margin-bottom: 2px;
-  }
-  .video-chico-youtube {
-    width: 385px;
-    height: 260px;
   }
   .galeria {
     min-height: 300px;
@@ -589,6 +672,22 @@ form.example::after {
   .card_contactos {
     margin-left: 18%;
   }
+  .iphone {
+    width: 380px;
+  }
+  .card_contactos {
+    margin-bottom: 18vh;
+    margin-left: 1vh;
+  }
+  .info_contactos {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .card_contactos {
+    max-width: 400px;
+  }
 }
 @media (max-width: 433px) {
   .barra {
@@ -603,19 +702,6 @@ form.example::after {
   h1 {
     font-size: 35px;
     padding-top: 9px;
-  }
-  .video-grande-youtube {
-    width: 380px;
-    height: 230px;
-  }
-  .video-chico {
-    width: 420px;
-    height: 280px;
-    margin-bottom: 2px;
-  }
-  .video-chico-youtube {
-    width: 385px;
-    height: 260px;
   }
   .galeria {
     min-height: 300px;
@@ -722,6 +808,47 @@ form.example::after {
   .iphone {
     width: 400px;
     margin-left: 0px;
+  }
+  .video_youtube {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 15%;
+  }
+  .youtube0 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .youtube1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .youtube2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .youtube3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .youtube4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .youtube5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .youtube6 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .titulo_youtube {
+    font-size: 20px;
+  }
+  .card_contactos {
+    max-width: 380px;
+    margin-bottom: 21vh;
   }
 }
 
