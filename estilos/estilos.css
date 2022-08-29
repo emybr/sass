@@ -133,6 +133,7 @@ section article:hover {
 .centrar-tarjeta {
   display: flex;
   justify-content: center;
+  margin-bottom: 7%;
 }
 
 .video_youtube {
@@ -448,6 +449,10 @@ form.example::after {
 .iphone {
   width: 800px;
   margin-left: 50px;
+}
+
+.video_youtube2 {
+  margin-bottom: 10.5%;
 }
 
 @media (max-width: 1366px) {
@@ -857,6 +862,29 @@ form.example::after {
   .card_contactos {
     max-width: 380px;
     margin-bottom: 21vh;
+  }
+}
+@media (max-width: 375px) {
+  .info_contactos {
+    max-width: 305px;
+    margin-left: 25px;
+  }
+  .card_contactos {
+    max-width: 330px;
+    margin-left: 10px;
+  }
+  .video_youtube {
+    padding-right: 0%;
+    width: 340px;
+    margin-left: 16px;
+  }
+  .tarjeta_index {
+    max-width: 350px;
+    margin-left: 0%;
+  }
+  .img-tarjeta {
+    width: 335px;
+    margin-left: 8px;
   }
 }
 
