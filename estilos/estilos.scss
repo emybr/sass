@@ -1,5 +1,4 @@
 $color_fuente_principal: #ffff;
-
 @font-face {
     font-family: 'SourceSansPro-Light';
     src: url(../fuentes/SourceSansPro-Light.ttf)}
@@ -8,61 +7,51 @@ $color_fuente_principal: #ffff;
         src: url(../fuentes/SourceSansPro-Bold.ttf)}
     
 body {
-    background-color: #efefef;
-}
-
+    background-color: #b7b2b2;
+    }
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40pt;
-    color: $color_fuente_principal;
+    color: black;
     text-align: center;
 }
-
 #vt {
     height: 45px;
     width: auto;
     margin-left: auto;
 }
-
-h2 {
+h1 {
     font-family:'SourceSansPro-Light';
     font-size: 25pt;
     text-transform: uppercase;
     text-align: center;
     padding-top: 15px;
 }
-
 .texto_card {
     font-size: 15pt;
     color: black;
 }
-
 .texto_card2 {
     font-size: 15pt;
     color: black;
     padding-top: 4%;
 }
-
 .video1 {
-    height: 400px;
+    height: 500px;
     width: 100%;
     box-shadow: 0 1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-
 .barra a {
     text-decoration: none;
     color: rgb(251, 249, 249);
 }
-
 .barra a:hover {
     color: rgb(213, 99, 112);
 }
-
 .logo-index {
     background-color: rgba(0, 0, 0, 0.143);
     height: 80px
 }
-
 footer {
     background-color: rgba(3, 2, 2, 0.803);
     height: 50px;
@@ -72,20 +61,17 @@ footer {
     justify-content: end;
     padding-top: 2px;
 }
-
 .flex-container a {
     color: aliceblue;
     font-size: 26px;
     width: 45px;
 }
-
 .container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
 }
-
 section article {
     transition: box-shadow 0.3s ease;
     background-color: white;
@@ -95,42 +81,59 @@ section article {
     margin-left: 16px;
     width: 420px;
 }
-
+.tarjeta_index {
+    transition: box-shadow 0.3s ease;
+    background-color: #f7f6fa;
+    margin: 5%;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    margin-left: 16px;
+    width: 300px;
+}
+.texto_index {
+    font-size: 22px;
+    color: #d7bbbb;
+    margin-top: 20px;
+    margin-left: -5px;
+    margin-right: 100px;
+    margin-bottom: 35px;
+    position: relative;
+    background-image: 
+    linear-gradient(45deg, rgb(10, 9, 9), rgb(244, 5, 5) 32px, rgba(0,0,0,0)32px),
+    linear-gradient(135deg, rgb(9, 8, 8), rgb(244, 7, 7) 32px, rgba(0,0,0,0)32px),
+    linear-gradient(135deg, rgb(15, 14, 14), rgb(7, 6, 6)); 
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 100% 100%, -32px 100%;
+    background-size: 48px 100%, 48px 100%, 100% 100%;
+}
 .carousel-inner {
     width: auto;
     height: 300px;
     margin-left: 30%;
 }
-
 .carousel {
     margin-top: 20px;
     background-color: black;
 }
-
 .tam-imagen {
     width: auto;
     height: 300px;
 }
-
 section article h3,
 section article p {
     margin: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
 section article h3 {
     text-align: center;
 }
-
 section article:hover {
     box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-
 .img-tarjeta {
-    width: 400px;
+    width: 300px;
     height: auto;
 }
-
 .centrar-tarjeta {
     display: flex;
     justify-content: center;
@@ -231,46 +234,65 @@ section article:hover {
     height: 80px;
     padding: 10px;
 }
-
 .buscar {
     background-color: rgba(0, 0, 0, 0.143);
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
 }
-
 .comparativo {
     display: flex;
     justify-content: center;
     font-family: 'Lora', serif;
 }
-
 .tabla {
     width: 80%;
 }
-
 .avatar {
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 93%;
+    margin-top: 12%;
 }
-
 .capacitaciones {
     list-style: none;
     font-size: 11pt;
-
 }
-.datos-personales {
-    margin: 10px;
-
+.contactanos{
+    font-size: 50px;
+}
+.datos-apellido {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: -3px;
+}
+.datos-comentario {
+    margin-left: 18%;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.datos-mensaje {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: 1px;
 }
 
+.datos-nombre {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.datos-reset {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: 5px;
+}
 .barra {
     font-size: 14px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(5, auto);
 }
-
 .galeria {
     min-height: 300px;
     width: 100%;
@@ -281,7 +303,6 @@ section article:hover {
     row-gap: 10px;
     padding: 10px;
 }
-
 .item1,
 .item2,
 .item3,
@@ -299,11 +320,9 @@ section article:hover {
 .item15 {
     border-bottom: black 1px solid;
 }
-
 .lista {
     list-style: none;
 }
-
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -311,26 +330,21 @@ section article:hover {
     width: 300px;
     margin-bottom: 15px;
 }
-
 /* On mouse-over, add a deeper shadow */
 .card:hover:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
 }
-
 .tarjeta_capacitacion {
     display: flex;
     justify-content: space-around;
 }
-
 * {
     box-sizing: border-box;
 }
-
 /* Style the search field */
 form.example input[type=text] {
     padding: 10px;
@@ -341,7 +355,6 @@ form.example input[type=text] {
     background: #f1f1f1;
     max-width: 800px;
 }
-
 /* Style the submit button */
 form.example button {
     float: left;
@@ -355,47 +368,40 @@ form.example button {
     /* Prevent double borders */
     cursor: pointer;
     max-width: 40px;
-
 }
-
 form.example button:hover {
     background: #0b7dda;
 }
-
 /* Clear floats */
 form.example::after {
     content: "";
     clear: both;
     display: table;
 }
-
 .boton_busqueda {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
-
 .btn-primary {
     background-color: black;
     border-color: black;
     margin-left: 125px;
-
 }
-
 .fondo_contactanos {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .info_contactos {
     padding-top: 20%;
-
-
 }
 .card_contactos {
     margin: 18vh;
-
+    background-image: url(../imagenes/floppy-disk-g7543b3150_1280.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 440px;
 }
 .card1 {
     border-radius: 4px;
@@ -406,7 +412,6 @@ form.example::after {
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
 .title {
     font-family:'SourceSansPro-Bold';
     font-weight: 700;
@@ -414,23 +419,19 @@ form.example::after {
     opacity: 0.85;
     color: #dcdcdc;
 }
-
 .small {
     font-weight: 400;
     opacity: 0.75;
     color: #ffff;
     font-size: 12px
 }
-
 .ucard {
     @extend .card1;
     text-align: center;
     width: 300px;
-
-    >h3 {
+    >h1 {
         @extend .title
     }
-
     >p {
         @extend .small
     }
@@ -438,16 +439,12 @@ form.example::after {
     @mixin fuente {
         font-style: italic;
     }
-
     .textos_generales{
         @include fuente()
     }
-
 .duda{
-    color: red;
+    color: rgb(231, 176, 176);
 }
-
-
 .iphone {
     width: 800px;
     margin-left: 50px;
@@ -456,15 +453,17 @@ form.example::after {
 margin-bottom: 10.5%;
 }
 @media (max-width:1366px) {
-
     .tarjeta_capacitacion {
         margin-bottom: 3%;
     }
-
     .btn-primary {
         background-color: black;
         border-color: black;
         margin-left: 125px;
+    }
+    .avatar {
+        margin-left: 90%;
+        margin-top: -8%;
     }
 }
 @media (max-width: 1110px){
@@ -480,8 +479,11 @@ margin-bottom: 10.5%;
         margin-top: 21vh;
         margin-bottom: 21vh;
     }    
+    .avatar {
+        margin-left: 88%;
+        margin-top: 1%;
+    }
 }
-
 @media (max-width: 900px){
     .iphone{
         width: 600px;
@@ -494,6 +496,16 @@ margin-bottom: 10.5%;
         margin-left: 25%;
         margin-top: 2%;
         margin-bottom: 16vh;
+    }
+    .avatar {
+        margin-left: 86%;
+        margin-top: -18%;
+    }
+    .tarjeta_index {
+        width: 270px;
+    }
+    .img-tarjeta{
+        width: 270px;
     }
 }
 @media (max-width:760px) {
@@ -574,9 +586,11 @@ margin-bottom: 10.5%;
         grid-column: 3/4;
         grid-row: 3/4;
     }
+    .avatar {
+        margin-left: 84%;
+        margin-top: -27%;
+    }
 }
-
-
 @media (max-width: 670px) {
     .barra {
         font-size: 12px;
@@ -693,19 +707,60 @@ margin-bottom: 10.5%;
         max-width: 400px;
         text-align: center;
     }
+    .avatar {
+        margin-left: 82%;
+        margin-top: -30%;
+    }
+.info_contactos{
+    margin-left: 120px;
+}
+.card_contactos{
+    margin-left: 110px;
+}
+.titulo_youtube{
+    font-size: 15px;
+}
 }
 @media(max-width:480px){
     .card_contactos{
         max-width: 400px;
     }
+    .avatar {
+        margin-left: 74%;
+        margin-top: -42%;
+    }
+    .datos-apellido {
+        font-size: 12px;
+        margin-top: -7px;
+    }
+    .datos-comentario {
+        font-size: 12px;
+        margin-top: -2px;
+    }
+    .datos-mensaje {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .datos-nombre {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .datos-reset{
+        margin-top: -3px;
+        font-size: 10px;
+    }
+    .info_contactos{
+        margin-left: 40px;
+    }
+    .card_contactos{
+        margin-left: 30px;
+    }
 }
-
 @media (max-width: 433px) {
     .barra {
         font-size: 12px;
         grid-gap: 5px;
     }
-
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -714,11 +769,9 @@ margin-bottom: 10.5%;
     .tarjeta_index {
         width: 390px;
     }
-    
     .img-tarjeta{
         width: 380px;
     }
-
     h1 {
         font-size: 35px;
         padding-top: 9px;
@@ -733,112 +786,91 @@ margin-bottom: 10.5%;
         row-gap: 10px;
         padding: 10px;
     }
-
     .item1 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
     .item2 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
     .item4 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
     .item7 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
     .item5 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-
     .item7 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-
     .item8 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
     .item10 {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-
     .item11 {
         grid-column: 2/3;
         grid-row: 4/5;
     }
-
     .item13 {
         grid-column: 1/2;
         grid-row: 5/6;
     }
-
     .item14 {
         grid-column: 1/3;
         grid-row: 5/6;
         padding-left: 50px;
     }
-
     .item3 {
         grid-column: 1/3;
         grid-row: 6/7;
         padding-left: 150px;
     }
-
     .item6 {
         grid-column: 1/3;
         grid-row: 7/8;
         padding-left: 150px;
     }
-
     .item9 {
         grid-column: 1/3;
         grid-row: 8/9;
         padding-left: 150px;
     }
-
     .item12 {
         grid-column: 1/3;
         grid-row: 9/10;
         padding-left: 150px;
     }
-
     .item15 {
         grid-column: 1/3;
         grid-row: 10/11;
         padding-left: 50px;
     }
-
     .carousel-inner {
         padding-top: 20px;
         margin-left: 0%;
         width: auto;
     }
-
     .tam-imagen {
         max-width: 414px;
         height: auto;
     }
-
     .card_contactos {
         margin-left: 1%;
     }
-
     .texto {
         padding-left: 2%;
     }
-
     .info_contactos {
         padding-top: 2%;
     }
@@ -889,14 +921,48 @@ margin-bottom: 10.5%;
     }
     .titulo_youtube{
         font-size: 20px;
-
     }
     .card_contactos{
         max-width: 380px;
         margin-bottom: 21vh;
     }
+    .avatar {
+        margin-left: 72%;
+        margin-top: -47%;
+    }
+    .datos-apellido {
+        margin-left: 19%;
+        font-size: 12px;
+        margin-top: -7px;
+    }
+    .datos-comentario {
+        margin-left: 18%;
+        font-size: 12px;
+        margin-top: -2px;
+    }
+    .datos-mensaje {
+        margin-left: 19%;
+        font-size: 12px;
+        margin-top: -2px;
+    }
+    .datos-nombre {
+        margin-top: 9px;
+        font-size: 12px;
+    }
+    .datos-reset{
+        margin-top: -3px;
+        font-size: 10px;
+    }
+    .info_contactos{
+        margin-left: 10px;
+    }
+    .card_contactos{
+        margin-left: 10px;
+    }
+    .iphone{
+        width: 350px;
+    }
 }
-
 @media(max-width: 375px) {
     .info_contactos {
         max-width: 305px;
@@ -919,5 +985,41 @@ margin-bottom: 10.5%;
     .img-tarjeta{
         width: 335px;
         margin-left: 8px;
+    }
+    .avatar {
+        margin-left: 69%;
+        margin-top: -53%;
+    }
+    .datos-apellido {
+        margin-left: 19%;
+        font-size: 10px;
+        margin-top: -7px;
+    }
+    .datos-comentario {
+        margin-left: 18%;
+        font-size: 10px;
+        margin-top: -2px;
+    }
+    .datos-mensaje {
+        margin-left: 19%;
+        font-size: 10px;
+        margin-top: -2px;
+    }
+    .datos-nombre {
+        margin-top: 9px;
+        font-size: 10px;
+    }
+    .datos-reset{
+        margin-top: -3px;
+        font-size: 10px;
+    }
+    .info_contactos{
+        margin: left 5px;
+    }
+    .card_contactos{
+        margin-left: 5px;
+    }
+    .iphone{
+        width: 350px;
     }
 }

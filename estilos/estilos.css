@@ -7,13 +7,13 @@
   src: url(../fuentes/SourceSansPro-Bold.ttf);
 }
 body {
-  background-color: #efefef;
+  background-color: #b7b2b2;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 40pt;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ h1 {
   margin-left: auto;
 }
 
-h2 {
+h1 {
   font-family: "SourceSansPro-Light";
   font-size: 25pt;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ h2 {
 }
 
 .video1 {
-  height: 400px;
+  height: 500px;
   width: 100%;
   box-shadow: 0 1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
@@ -95,6 +95,30 @@ section article {
   width: 420px;
 }
 
+.tarjeta_index {
+  transition: box-shadow 0.3s ease;
+  background-color: #f7f6fa;
+  margin: 5%;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  margin-left: 16px;
+  width: 300px;
+}
+
+.texto_index {
+  font-size: 22px;
+  color: #d7bbbb;
+  margin-top: 20px;
+  margin-left: -5px;
+  margin-right: 100px;
+  margin-bottom: 35px;
+  position: relative;
+  background-image: linear-gradient(45deg, rgb(10, 9, 9), rgb(244, 5, 5) 32px, rgba(0, 0, 0, 0) 32px), linear-gradient(135deg, rgb(9, 8, 8), rgb(244, 7, 7) 32px, rgba(0, 0, 0, 0) 32px), linear-gradient(135deg, rgb(15, 14, 14), rgb(7, 6, 6));
+  background-repeat: no-repeat;
+  background-position: 100% 100%, 100% 100%, -32px 100%;
+  background-size: 48px 100%, 48px 100%, 100% 100%;
+}
+
 .carousel-inner {
   width: auto;
   height: 300px;
@@ -126,7 +150,7 @@ section article:hover {
 }
 
 .img-tarjeta {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
@@ -266,8 +290,10 @@ section article:hover {
 }
 
 .avatar {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  margin-left: 93%;
+  margin-top: 12%;
 }
 
 .capacitaciones {
@@ -275,8 +301,38 @@ section article:hover {
   font-size: 11pt;
 }
 
-.datos-personales {
-  margin: 10px;
+.contactanos {
+  font-size: 50px;
+}
+
+.datos-apellido {
+  margin-left: 19%;
+  font-size: 12px;
+  margin-top: -3px;
+}
+
+.datos-comentario {
+  margin-left: 18%;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.datos-mensaje {
+  margin-left: 19%;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.datos-nombre {
+  margin-left: 19%;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.datos-reset {
+  margin-left: 19%;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .barra {
@@ -396,7 +452,7 @@ form.example::after {
 }
 
 .fondo_contactanos {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -407,6 +463,10 @@ form.example::after {
 
 .card_contactos {
   margin: 18vh;
+  background-image: url(../imagenes/floppy-disk-g7543b3150_1280.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 440px;
 }
 
 .card1, .ucard {
@@ -419,7 +479,7 @@ form.example::after {
   margin-bottom: 10px;
 }
 
-.title, .ucard > h3 {
+.title, .ucard > h1 {
   font-family: "SourceSansPro-Bold";
   font-weight: 700;
   font-size: 50px;
@@ -443,7 +503,7 @@ form.example::after {
 }
 
 .duda {
-  color: red;
+  color: rgb(231, 176, 176);
 }
 
 .iphone {
@@ -464,6 +524,10 @@ form.example::after {
     border-color: black;
     margin-left: 125px;
   }
+  .avatar {
+    margin-left: 90%;
+    margin-top: -8%;
+  }
 }
 @media (max-width: 1110px) {
   .titulo_youtube {
@@ -478,6 +542,10 @@ form.example::after {
     margin-top: 21vh;
     margin-bottom: 21vh;
   }
+  .avatar {
+    margin-left: 88%;
+    margin-top: 1%;
+  }
 }
 @media (max-width: 900px) {
   .iphone {
@@ -491,6 +559,16 @@ form.example::after {
     margin-left: 25%;
     margin-top: 2%;
     margin-bottom: 16vh;
+  }
+  .avatar {
+    margin-left: 86%;
+    margin-top: -18%;
+  }
+  .tarjeta_index {
+    width: 270px;
+  }
+  .img-tarjeta {
+    width: 270px;
   }
 }
 @media (max-width: 760px) {
@@ -570,6 +648,10 @@ form.example::after {
   .youtube6 {
     grid-column: 3/4;
     grid-row: 3/4;
+  }
+  .avatar {
+    margin-left: 84%;
+    margin-top: -27%;
   }
 }
 @media (max-width: 670px) {
@@ -688,10 +770,53 @@ form.example::after {
     max-width: 400px;
     text-align: center;
   }
+  .avatar {
+    margin-left: 82%;
+    margin-top: -30%;
+  }
+  .info_contactos {
+    margin-left: 120px;
+  }
+  .card_contactos {
+    margin-left: 110px;
+  }
+  .titulo_youtube {
+    font-size: 15px;
+  }
 }
 @media (max-width: 480px) {
   .card_contactos {
     max-width: 400px;
+  }
+  .avatar {
+    margin-left: 74%;
+    margin-top: -42%;
+  }
+  .datos-apellido {
+    font-size: 12px;
+    margin-top: -7px;
+  }
+  .datos-comentario {
+    font-size: 12px;
+    margin-top: -2px;
+  }
+  .datos-mensaje {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .datos-nombre {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .datos-reset {
+    margin-top: -3px;
+    font-size: 10px;
+  }
+  .info_contactos {
+    margin-left: 40px;
+  }
+  .card_contactos {
+    margin-left: 30px;
   }
 }
 @media (max-width: 433px) {
@@ -863,6 +988,42 @@ form.example::after {
     max-width: 380px;
     margin-bottom: 21vh;
   }
+  .avatar {
+    margin-left: 72%;
+    margin-top: -47%;
+  }
+  .datos-apellido {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: -7px;
+  }
+  .datos-comentario {
+    margin-left: 18%;
+    font-size: 12px;
+    margin-top: -2px;
+  }
+  .datos-mensaje {
+    margin-left: 19%;
+    font-size: 12px;
+    margin-top: -2px;
+  }
+  .datos-nombre {
+    margin-top: 9px;
+    font-size: 12px;
+  }
+  .datos-reset {
+    margin-top: -3px;
+    font-size: 10px;
+  }
+  .info_contactos {
+    margin-left: 10px;
+  }
+  .card_contactos {
+    margin-left: 10px;
+  }
+  .iphone {
+    width: 350px;
+  }
 }
 @media (max-width: 375px) {
   .info_contactos {
@@ -885,6 +1046,42 @@ form.example::after {
   .img-tarjeta {
     width: 335px;
     margin-left: 8px;
+  }
+  .avatar {
+    margin-left: 69%;
+    margin-top: -53%;
+  }
+  .datos-apellido {
+    margin-left: 19%;
+    font-size: 10px;
+    margin-top: -7px;
+  }
+  .datos-comentario {
+    margin-left: 18%;
+    font-size: 10px;
+    margin-top: -2px;
+  }
+  .datos-mensaje {
+    margin-left: 19%;
+    font-size: 10px;
+    margin-top: -2px;
+  }
+  .datos-nombre {
+    margin-top: 9px;
+    font-size: 10px;
+  }
+  .datos-reset {
+    margin-top: -3px;
+    font-size: 10px;
+  }
+  .info_contactos {
+    margin: left 5px;
+  }
+  .card_contactos {
+    margin-left: 5px;
+  }
+  .iphone {
+    width: 350px;
   }
 }
 

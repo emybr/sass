@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="imagenes/VT.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,7 +24,7 @@
 <body>
     <header>
         <!--inicio de barra-->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav id="vision-tecnica" class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#"><img id="vt" src="imagenes/VT.png" alt="vision_tecnica"></a>
             <!-- Toggler/collapsibe Button -->
@@ -35,9 +36,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="pages/youtube.html">YOUTUBE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/conoceme.html">CONOCEME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/consejos.html">CONSEJOS</a>
@@ -58,31 +56,36 @@
             <iframe class="video1" src="https://www.youtube.com/embed/aDFOtjWFfn0?autoplay"
                 title="Nuevo +Vision Técnica  2022" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen>
+            </iframe>
         </section>
-        <section class="container">
-            <article class="tarjeta_index">
-                <h3>Test Gamer</h3>
+        <div>
+            <a href="#vision-tecnica"><img  class="avatar" src="../imagenes/Avatar Maxi.png" width="150" height="auto" alt="AvatarMaxi"></a>
+        </div>
+        <section  class="container">
+            <article data-aos="fade-down" class="tarjeta_index">
+                <h1 class="texto_index">Test Gamer</h1>
                 <div>
                     <a  href="https://www.youtube.com/watch?v=QSBrp_il2rI" target="_blank"><img class="img-tarjeta"
                         src="imagenes/tarjetas/test Gamer.jpg" alt="Test Gamer"></a>
                 </div>
                         <p>Apple M1 Sirve para jugar???</p>
             </article>
-            <article class="tarjeta_index">
-                <h3>Asi es como se hace</h3>
+            <article data-aos="fade-up" class="tarjeta_index">
+                <h1 class="texto_index">Asi se hace</h1>
                 <a href="https://www.youtube.com/watch?v=CSvRN7KDRfE&t=2s " target="_blank"><img class="img-tarjeta"
                         src="imagenes/tarjetas/generador.jpg" alt="generador"></a>
                 <p>Como Conectar correctamente este generador BTA?????</p>
             </article>
-            <article class="tarjeta_index">
-                <h3>Prueba real!!! Asi funciona</h3>
+            <article data-aos="fade-down" class="tarjeta_index">
+                <h1 class="texto_index">Prueba real!!! </h1>
                 <a href="https://www.youtube.com/watch?v=Hon9raq2LQU&t=74s" target="_blank"><img class="img-tarjeta"
                         src="imagenes/tarjetas/bosch.jpg" alt="bosch"></a>
                 <p>Prueba de detector de materiales Bosch en condiciones reales de detección.</p>
             </article>
         </section>
     </main>
+    
     <!--inicio carousel-->
     <div id="demo" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -112,7 +115,6 @@
         </a>
     </div>
     <!--fin carousel-->
-    
     <footer class="flex-container">
         <a href="https://twitter.com/maxibr82" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://www.instagram.com/visiontecnica2022/" target="_blank"><i
@@ -125,7 +127,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1500});
+    </script>
 </body>
 
 </html>
