@@ -775,10 +775,10 @@ form.example::after {
     margin-top: -30%;
   }
   .info_contactos {
-    margin-left: 120px;
+    margin-left: 7%;
   }
   .card_contactos {
-    margin-left: 110px;
+    margin-left: 6%;
   }
   .titulo_youtube {
     font-size: 15px;
@@ -928,9 +928,6 @@ form.example::after {
     max-width: 414px;
     height: auto;
   }
-  .card_contactos {
-    margin-left: 1%;
-  }
   .texto {
     padding-left: 2%;
   }
@@ -1078,7 +1075,7 @@ form.example::after {
     margin: left 5px;
   }
   .card_contactos {
-    margin-left: 5px;
+    margin-left: 7px;
   }
   .iphone {
     width: 350px;
